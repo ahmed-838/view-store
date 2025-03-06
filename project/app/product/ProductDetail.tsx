@@ -42,7 +42,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onClose }) => {
             </p>    
             </div>
           <button
-            onClick={ () => ( window.open(`https://wa.me/1224900205`, '_blank'))}
+            onClick={() => (window.open(`https://wa.me/1224900205?text=السلام عليكم و رحمة الله و بركاته ، أود الاستفسار عن : ${product.name} و سعره: ${product.price}`, '_blank'))} // سطر جديد
             className="mt-4 w-full bg-black text-white py-2 rounded-md hover:bg-gray-800 transition-colors"
           >
             اطلبه عبر الواتساب
